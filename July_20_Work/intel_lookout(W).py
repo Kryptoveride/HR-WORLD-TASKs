@@ -16,6 +16,7 @@ target_ips = [
     "1.222.84.29",       # IOC
     "167.88.173.252",    # IOC
     "23.227.202.253",    # IOC
+    "255.255.243.345"
 ]
 
 # Terminal colors
@@ -30,8 +31,6 @@ headers = {
 
 
 def get_hostname(ip_address):
-    """Attempt to find the reverse-DNS hostname."""
-
     try:
         hostname = socket.gethostbyaddr(ip_address)[0]
         return hostname
